@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="vernav_topcard">
+        <div class=" flex-column flex-shrink-0 p-3 text-dark fullnav" style="width: 220px;">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <span >
+                    <!-- icons8.com website to find all icons file -->
+                    <img src="profile_icon.png" alt="profile_icon_icon" height="20px" width="20px" class="backshade d-inline">
+                    <p class="profile_icon_ vertical d-inline  vernav_text dash">User 1</p>
+                </span>
+                <br>
+                
+                <span>
+                    <img src="planning.png" alt="Today_icon" height="20px" width="20px" class="d-inline">
+                    <p class="Today d-inline vernav_text">Today</p>
+                </span>
+                <br>
+                <span>
+                    <img src="completed.png" alt="Completed_icon" height="20px" width="20px" class="d-inline">
+                    <p class="Completed d-inline vernav_text">Completed</p>
+                </span>
+                <br>
+                <span>
+                    <img src="help.png" alt="Flagged_icon" height="20px" width="20px" class="d-inline">
+                    <p class="Flagged d-inline vernav_text">Flagged</p>
+                </span>
+                
+                </br>
+                <span>
+                    <img src="schedule.png" alt="Schedule_icon" height="20px" width="20px" class="d-inline">
+                    <p class="Schedule d-inline vernav_text">Schedule</p>
+                </span>
+                
+                </br>
+                <hr width="150px"/>
+                <br>
+                <span>
+                    <img src="notifiation.png" alt="Notification_icon" height="20px" width="20px" class="backshade d-inline">
+                    <p class="Notification d-inline vernav_text">Notification</p>
+                </span>
+                <br>
+                <span>
+                    <img src="about.png" alt="About_icon" height="20px" width="20px" class="d-inline ">
+                    <p class="About d-inline vernav_text">About</p>
+                    
+                </span>
+                <br>
+                <span>
+                    <img src="logout.png" alt="logout_icon" height="20px" width="20px" class="d-inline">
+                    <p class="logout d-inline vernav_text">Logout</p>
+                </span>
+                <br>
+                <span>
+                    <img src="settings.png" alt="settings_icon" height="20px" width="20px" class="d-inline">
+                    <p class="Settings d-inline vernav_text">Settings</p>
+                </span>
+                </br>
+            </ul>
+            <!-- vertical nav footer -->
+            <div class="col">
+                <div class="card footcard" style="width: 200px;">
+                  <div class="card-body-foot">
+                    <h5 class="card-title">Tags</h5>
+                    <button type="button" class="footer_button" style="background-color: #fcd9d9; width: 80px; height: 35px; border: 0px;">All Tags</button>
+                    <button type="button" class="footer_button" style="background-color: #fcd9d9; width: 80px; height: 35px;">#work</button><br/><br/>
+                    <button type="button" class="footer_button" style="background-color: #fcd9d9; width: 80px; height: 35px;">#plan</button>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+<!-- sidebar overs here and main section starts here -->
+<!-- main card element -->
+<div class="container-body container-fluid">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+            <header>
+                <h1>To Do List</h1>
+                <form id="form_task">
+                    <input 
+                        type="text" 
+                        name="task_textbox" 
+                        id="task_textbox" 
+                        placeholder="Add your tasks" />
+                    <input 
+                        type="submit"
+                        id="textbox_submit" 
+                        value="+ Add" />
+                </form>
+            </header>
+            <main>
+                <section class="listing">
+                    <h2>Tasks</h2>
+        
+                    <div id="tasks">
+        
+                        <div class="task">
+                            <div class="content">
+                                <input 
+                                    type="text" 
+                                    class="text_content" 
+                                    value="Water the plant"
+                                    readonly>
+                            </div>
+                            <div class="actions">
+                                <button class="re_write">Re-write</button>
+                                <button class="remove">- Remove</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </section>
+            </main>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- full_page div ending -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

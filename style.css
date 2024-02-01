@@ -1,0 +1,188 @@
+.footer_button{
+background-color: #fcd9d9; 
+width: 80px;
+height: 35px;
+border: 0px;
+border-radius: 5px;
+}
+
+.container-body{
+    justify-content: center;
+    align-items: baseline;
+    align-items: stretch;
+    top:20vh;
+    /* left:20vh; */
+    position: absolute;
+    display: flex;
+}
+
+.fullnav{
+	background-image: linear-gradient(to right,white,rgb(243, 220, 224));
+}
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color:gray;
+    background-image:linear-gradient(to right,white,pink);
+	
+}
+.card-body{
+    background-image:linear-gradient(to right,white,pink);
+    border-radius: 5px;
+}
+
+.footcard{
+	margin-left: -7px;
+
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	background: linear-gradient(to right, lightgray,violet);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+	margin-bottom: 1rem;
+    letter-spacing: 5px;
+}
+
+#form_task {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+    transition: 200ms;
+}
+button:hover{
+    transform: scale(1.04);
+}
+
+#task_textbox {
+	flex: 1 1 0%;
+    letter-spacing: 4px;
+	background-color: rgb(226, 214, 228);
+	padding: 10px;
+	border-radius: 6px;
+	margin-right: 1rem;
+	color: rgb(97, 96, 96);
+	font-size: 1rem;
+}
+
+#task_textbox::placeholder {
+	color: gray;
+}
+
+#textbox_submit {
+	color: pink;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to bottom, gray,rgb(240, 176, 240));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#textbox_submit:hover {
+	opacity: 0.8;
+}
+
+#textbox_submit:active {
+	
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.listing {
+	padding: 10px;
+}
+
+.listing h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: gray;
+    letter-spacing: 5px;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(226, 214, 228);
+	padding: 10px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .content .text_content {
+    letter-spacing: 3px;
+	color: gray;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+    
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .re_write {
+	background-image: linear-gradient(to bottom, gray,rgb(240, 176, 240));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .remove {
+	color: rgb(156, 44, 67);
+}
